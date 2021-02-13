@@ -7,10 +7,15 @@
 
         public Posicao()
         {
-
         }
 
         public Posicao(int linha, int coluna)
+        {
+            Linha = linha;
+            Coluna = coluna;
+        }
+
+        public void definiValores(int linha, int coluna)
         {
             Linha = linha;
             Coluna = coluna;
