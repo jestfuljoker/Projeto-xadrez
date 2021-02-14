@@ -15,7 +15,7 @@
             Coluna = coluna;
         }
 
-        public void definiValores(int linha, int coluna)
+        public void definirValores(int linha, int coluna)
         {
             Linha = linha;
             Coluna = coluna;
