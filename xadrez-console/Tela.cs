@@ -9,14 +9,14 @@ namespace xadrez_console
     {
         public static void imprimirPartida(PartidaDeXadrez partida)
         {
-            ImprimirTabuleiro(partida.tab);
+            ImprimirTabuleiro(partida.Tab);
             Console.WriteLine();
             imprimirPecasCapturadas(partida);
             Console.WriteLine();
-            Console.WriteLine($"Turno: {partida.turno}.");
+            Console.WriteLine($"Turno: {partida.Turno}.");
             if (!partida.Terminada)
             {
-                Console.WriteLine($"Aguardando jogada: {partida.jogadorAtual}.");
+                Console.WriteLine($"Aguardando jogada: {partida.JogadorAtual}.");
 
                 if (partida.Xeque)
                 {
@@ -26,7 +26,7 @@ namespace xadrez_console
             else
             {
                 Console.WriteLine("XEQUE MATE!!!");
-                Console.WriteLine($"Vencedor {partida.jogadorAtual}.");
+                Console.WriteLine($"Vencedor {partida.JogadorAtual}.");
             }
         }
 

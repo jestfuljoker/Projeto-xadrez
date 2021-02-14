@@ -11,7 +11,7 @@ namespace xadrez_console
             try
             {
                 PartidaDeXadrez partida = new PartidaDeXadrez();
-                Tela.ImprimirTabuleiro(partida.tab);
+                Tela.ImprimirTabuleiro(partida.Tab);
 
                 while (!partida.Terminada)
                 {
@@ -25,10 +25,10 @@ namespace xadrez_console
                         Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
                         partida.validarPosicaoDeOrigem(origem);
 
-                        bool[,] posicoesPossiveis = partida.tab.Peca(origem).movimentosPossiveis();
+                        bool[,] posicoesPossiveis = partida.Tab.Peca(origem).movimentosPossiveis();
 
                         Console.Clear();
-                        Tela.ImprimirTabuleiro(partida.tab, posicoesPossiveis);
+                        Tela.ImprimirTabuleiro(partida.Tab, posicoesPossiveis);
 
                         Console.WriteLine();
                         Console.Write("Digite a posição de destino: ");
