@@ -45,13 +45,10 @@
             {
                 return null;
             }
-            else
-            {
-                Peca aux = Peca(pos);
-                aux.Posicao = null;
-                Pecas[pos.Linha, pos.Coluna] = null;
-                return aux;
-            }
+            Peca aux = Peca(pos);
+            aux.Posicao = null;
+            Pecas[pos.Linha, pos.Coluna] = null;
+            return aux;
         }
 
         public bool posicaoValida(Posicao pos)
